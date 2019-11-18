@@ -17,7 +17,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "google",
+      "react-app"
+    ],
+    "rules": {
+      "require-jsdoc": [0, "never"],
+      "semi": [2, "never"]
+    }
   },
   "browserslist": {
     "production": [
@@ -32,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-google": "^0.14.0",
     "node-sass": "^4.13.0"
   }
 }
